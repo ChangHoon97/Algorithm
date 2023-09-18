@@ -1,5 +1,7 @@
 package BruteForce;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Scanner;
 
 //모이기
@@ -7,15 +9,26 @@ import java.util.Scanner;
 //미완
 public class gathering {
     public void solution(int n, int[][] arr){
-        int[][] range = new int[n][n];
-        for(int i =0; i<n; i++){
-            for(int j=0; j<n; j++){
-                range[i][j] = arr[i][0] - arr[j][0] + arr[i][1] - arr[j][1];
-            }
+
+        //모든 x값과 y값 추출
+        int[] x = new int[n];
+        int[] y = new int[n];
+        for(int i=0; i<n; i++){
+            x[i] = arr[i][0];
+            y[i] = arr[i][1];
         }
-        for(int i=1; i<=n; i++){
+
+        int[] answer = new int[n];
+        int[] sum = new int[n];
+
+        //모든 x,y값과 각 점들의 거리 계산
+        for(int i=0; i<n; i++){
+            for(int j=0; j<n; j++) {
+                sum[i] = Math.abs(x[i] - arr[j][0]) + Math.abs(y[j] - arr[j][1]);
+            }
 
         }
+
     }
 
     public static void main(String[] args) {
