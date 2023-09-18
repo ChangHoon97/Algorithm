@@ -1,11 +1,11 @@
-package optimization;
+package NumberTheory;
 
 import java.util.Scanner;
 
 //숨어있는 약수 찾기
 //1407, 2247
 //코드 틀렸다
-public class hiding_Aliquot_error {
+public class hiding_Aliquot_Error {
 
     public void solution(int a, int b){
         int tmp_A = a;
@@ -24,7 +24,7 @@ public class hiding_Aliquot_error {
     }
 
     public static void main(String[] args) {
-        hiding_Aliquot_error T = new hiding_Aliquot_error();
+        hiding_Aliquot_Error T = new hiding_Aliquot_Error();
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
