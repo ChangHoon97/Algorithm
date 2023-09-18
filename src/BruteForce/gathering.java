@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 //모이기
 //1090
-public class Main {
+//미완
+public class gathering {
     public void solution(int n, int[][] arr){
         int[][] range = new int[n][n];
         for(int i =0; i<n; i++){
@@ -18,7 +19,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Main T = new Main();
+        gathering T = new gathering();
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[][] arr = new int[n][2];
