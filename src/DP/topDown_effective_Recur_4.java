@@ -1,11 +1,11 @@
-package DP_TopDown;
+package DP;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
 //냅색
 //12865
-public class Main {
+public class topDown_effective_Recur_4 {
 
     static int n;
     static int b;
@@ -13,7 +13,7 @@ public class Main {
     static int[][] dp;
 
     public static void main(String[] args) {
-        Main T = new Main();
+        topDown_effective_Recur_4 T = new topDown_effective_Recur_4();
         Scanner sc = new Scanner(System.in);
         n = sc.nextInt();
         b = sc.nextInt();
