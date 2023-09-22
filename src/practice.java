@@ -9,6 +9,7 @@ public class practice {
         System.out.println(a);
         System.out.println(n);
         System.out.println(n/2);
+        System.out.println(a);
 
     }
 }
